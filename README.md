@@ -117,3 +117,56 @@ Một số kết quả hiến thị sau khi xử lý:
 Đám mây từ để xem những từ phổ biến.
 
 • Ham:
+
+![ham](https://github.com/datvu1502/DSS/assets/118582440/df89376d-95ad-4ed0-b20e-1c7f99a6cc70)
+
+•	Spam:
+
+![spam](https://github.com/datvu1502/DSS/assets/118582440/2fa21d41-60c5-4020-b33f-c01c5c2607e2)
+
+### So sánh tổng số ký tự, từ trong tin nhắn spam và ham (hoặc không phải spam)
+
+•	So sánh ký tự
+
+![charecter](https://github.com/datvu1502/DSS/assets/118582440/6f88617e-4509-4ad6-af4f-0c2dfbe29ab4)
+
+• So sánh từ
+
+![word](https://github.com/datvu1502/DSS/assets/118582440/6d49350f-2d3d-4007-98bc-9449af272797)
+
+# Ứng dụng thuật Naive Bayes phân loại thư rác
+## Xây dựng mô hình
+### Phương pháp Bag of Words
+
+Phương pháp Bag of Words (BoW) sẽ chuyển các từ, các câu, đoạn văn ở
+dạng text của văn bản về một vector mà mỗi phần tử là một số. BoW học được
+một bộ từ vựng từ tất cả các văn bản rồi mô hình các văn bản bằng cách đếm
+số lần xuất hiện của mỗi từ trong văn bản đó. Bag of Words không quan tâm
+đến thứ tự từ trong câu và cũng không quan tâm đến ngữ nghĩa của từ. Ở đây,
+ta sử dụng thư viện có sẵn ’sklearn’ để thực hiện phương pháp này.
+
+![image](https://github.com/datvu1502/DSS/assets/118582440/6d36b699-5e21-4331-ae66-cbca9dd0a12b)
+
+### Định dạng input và output
+![image](https://github.com/datvu1502/DSS/assets/118582440/cb08de4b-1252-4170-821f-fe02ac7b6264)
+
+### Xây dựng mô hình bằng hàm MultinomialNB() của thư viện ’sklearn.naive_bayes’:
+
+![image](https://github.com/datvu1502/DSS/assets/118582440/1c66e144-3bcc-423c-b4a7-e5fa07ae65c2)
+
+## Đánh giá mô hình
+
+![image](https://github.com/datvu1502/DSS/assets/118582440/ef28daba-a502-4576-82de-9331ba5121a8)
+
+Mô hình phân loại thư rác sử dụng thuật toán Naive Bayes trên có độ chính xác
+là 96.95%.
+
+![matran](https://github.com/datvu1502/DSS/assets/118582440/e932f35b-e977-471b-9233-91f2a01920da)
+
+Với dữ liệu tập test:
+
+• Mô hình dự đoán đúng 957/957 tin nhắn không phải Spam.
+
+• Mô hình dự đoán đúng 124/158 tin nhắn Spam.
+
+
