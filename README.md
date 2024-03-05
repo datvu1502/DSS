@@ -114,7 +114,7 @@ Một số kết quả hiến thị sau khi xử lý:
 ![nhiphan](https://github.com/datvu1502/DSS/assets/118582440/25c9408d-f8b5-49f1-b806-5d77105177fb)
 
 ## Trực quan dữ liệu sau khi xử lý bằng Word cloud
-Đám mây từ để xem những từ phổ biến.
+Sử dụng 'đám mây từ' để xem những từ phổ biến.
 
 • Ham:
 
