@@ -3,7 +3,7 @@ Trong thời đại kỹ thuật số, ứng dụng của tin nhắn ngày càng
 
 Bài báo cáo này trình bày các bước sử dụng thuật toán Naive Bayes để phân loại thư rác (SMS spam).
 
-# Tiền xử lý dữ liệu
+# Tổng quan về bộ dữ liệu
 ## Bộ dữ liệu
 
 SMS Spam Collection v.1 là một tập hợp các tin nhắn được gắn thẻ SMS đã được thu thập để nghiên cứu Spam SMS. Tập dữ liệu chứa các tin nhắn SMS bằng tiếng Anh gồm 5.572 tin nhắn, được gắn thẻ là ham (hợp pháp) hoặc spam. Bộ dữ liệu được lấy trên https://archive.ics.uci.edu/ml/datasets/sms+spam+collection. Được từ nhiều nguồn trên Internet, cụ thể là:
@@ -31,7 +31,7 @@ Tập dữ liệu chứa một thông báo trên mỗi dòng. Mỗi dòng bao g�
 ![data](https://github.com/datvu1502/DSS/assets/118582440/23dd61c2-7f60-49b2-8771-6f82f588d754)
 
 
-##	Extract dữ liệu
+## Extract dữ liệu
 Đầu tiên, ta trích xuất các thông tin sau:
 •	Tổng số ký tự
 •	Tổng số từ
@@ -40,18 +40,18 @@ Tập dữ liệu chứa một thông báo trên mỗi dòng. Mỗi dòng bao g�
 ![sktht](https://github.com/datvu1502/DSS/assets/118582440/47426d35-f3b5-4463-8f4d-7f379e050ade)
 
  
-##	Trực quan hóa dữ liệu ham và spam theo số lượng ký tự, từ, câu
+## Trực quan hóa dữ liệu ham và spam theo số lượng ký tự, từ, câu
 
 Kết quả hiển thị ra mà hình:
 
 ![tqhpng](https://github.com/datvu1502/DSS/assets/118582440/9a5482af-4f3e-46fe-875d-263f21abc1dc)
 
-## Tiền xử lý dữ liệu
-### Cài đặt các thư viện xử lý văn bản
+# Tiền xử lý dữ liệu
+## Cài đặt các thư viện xử lý văn bản
 
 ![image](https://github.com/datvu1502/DSS/assets/118582440/fcfc6e0d-f4e5-4daa-8307-f142c956e7e7)
 
-### Xử lý dữ liệu văn bản
+## Xử lý dữ liệu văn bản
 Trước khi tiến hành phân loại, việc tiền xử lý dữ liệu đầu vào là rất quan
 trọng để đảm bảo kết quả phân loại chính xác. Với dữ liệu dạng chuỗi, việc xử lý
 trước là cực kỳ cần thiết để phục vụ cho việc trích xuất các đặc trưng và phân
@@ -109,11 +109,11 @@ Một số kết quả hiến thị sau khi xử lý:
 
 ![hienthixl](https://github.com/datvu1502/DSS/assets/118582440/e34da172-19aa-43f6-9a2f-03c82582c6f1)
 
-### Sửa nhãn từ ’spam’ và ’ham’ thành 1 và 0
+## Sửa nhãn từ ’spam’ và ’ham’ thành 1 và 0
 
 ![nhiphan](https://github.com/datvu1502/DSS/assets/118582440/25c9408d-f8b5-49f1-b806-5d77105177fb)
 
-### Trực quan dữ liệu sau khi xử lý bằng Word cloud
+## Trực quan dữ liệu sau khi xử lý bằng Word cloud
 Đám mây từ để xem những từ phổ biến.
 
 • Ham:
@@ -124,7 +124,7 @@ Một số kết quả hiến thị sau khi xử lý:
 
 ![spam](https://github.com/datvu1502/DSS/assets/118582440/2fa21d41-60c5-4020-b33f-c01c5c2607e2)
 
-### So sánh tổng số ký tự, từ trong tin nhắn spam và ham (hoặc không phải spam)
+## So sánh tổng số ký tự, từ trong tin nhắn spam và ham (hoặc không phải spam)
 
 •	So sánh ký tự
 
