@@ -1,4 +1,4 @@
-# PHÂN LOẠI THƯ RÁC SỬ DỤNG THUẬT TOÁN NAIVE BAYES
+# PHÂN LOẠI THƯ RÁC SỬ DỤNG THUẬT TOÁN NAIVE BAYES - SMS SPAM
 Trong thời đại kỹ thuật số, ứng dụng của tin nhắn ngày càng nhiều. Kéo theo đó là tình trạng các tin nhắn rác (SMS spam) ngày càng tăng. Các tin nhắn rác không chỉ gây phiền hà cho người nhận, mà còn có thể công cụ lừa đảo. Do đó, cần có một công cụ, thuật toán để đánh dấu tin nhắn có phải là tin nhắn rác hay không.
 
 Bài báo cáo này trình bày các bước sử dụng thuật toán Naive Bayes để phân loại thư rác (SMS spam).
